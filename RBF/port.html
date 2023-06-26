@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1 class="animated-word">Welcome</h1>
+      <p>Hi, I'm John Doe, a Web Developer.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer with expertise in front-end technologies.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <!-- Your portfolio projects here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <!-- Your contact form or contact information here -->
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    gsap.from('.animated-word', {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2
+    });
+  </script>
+</body>
+
+</html>
